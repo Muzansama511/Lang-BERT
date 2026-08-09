@@ -4,5 +4,3 @@ Dataset/data.py:get_dataloader requires a path to the OpenWebText database (get 
 
 After HF download, process all the parquet files to train.bin and val.bin files using "Dataset/data.py:make_dataset_to_bin" function. 
 Once the bin files are generated, one can start training directly with "python train.py".
-
-Problems faced with environment.yaml: Need to download the appropriate version of torch (2.12) with necessary cuda support separately from https://pytorch.org/get-started/locally/
