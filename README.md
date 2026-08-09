@@ -3,4 +3,6 @@ This BERT style transformer incorporates "DeepNet" principles to enable deep tra
 Dataset/data.py:get_dataloader requires a path to the OpenWebText database (get from hf/Skylion007). 
 
 After hf download, process all the parquet files to train.bin and val.bin files using "Dataset/data.py:make_dataset_to_bin" funstion. 
-Once the bin files are made, one can directly start training.
+Once the bin files are made, one can directly start training with "python train.py".
+
+Problems faced with environment.yaml: Need to download the appropriate version of torch (2.13) with necessary cuda support seperately from https://pytorch.org/get-started/locally/
